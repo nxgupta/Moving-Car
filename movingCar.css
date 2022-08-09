@@ -1,0 +1,53 @@
+.container{
+    position: relative;
+    width:100%;
+    height:512px;
+    background: url("https://hasinhayder.github.io/CSS3-Keyframe-Transition/img/road.jpg");
+    background-size: auto;
+    overflow: hidden;
+  }
+.car{
+    position: absolute;
+    height: 512px;
+    width: 512px;
+    bottom: -350px;
+    right:50%;
+    background: url('https://hasinhayder.github.io/CSS3-Keyframe-Transition/img/car3.png') no-repeat;
+    background-size: 30%;
+    animation: animateCar 10s linear infinite;
+  }
+  @keyframes animateCar {
+    0%{
+        left:100%
+    }
+    100%{
+        left:-30%;
+    }
+  }
+  .tyre1, .tyre2{
+    height: 128px;
+    width: 128px;
+    background: url('https://hasinhayder.github.io/CSS3-Keyframe-Transition/img/tyre.png') center center no-repeat;
+    background-size: 25%;
+  }
+  .tyre1{
+    
+    position: absolute;
+    left:-4%;
+    top:5.2%;
+    animation: rotate linear 1s infinite;
+  }
+  .tyre2{
+    left:10%;
+    top:5.2%;
+    position: absolute;
+    animation: rotate linear 1s infinite;
+  }
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
